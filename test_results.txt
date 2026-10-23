@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+rootdir: /home/user/se413-513-assignment-2
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0
+collecting ... collected 7 items
+
+tests/test_registration.py::test_empty_batch_returns_zero_count_and_zero_fees PASSED [ 14%]
+tests/test_registration.py::test_batch_with_only_rejected_request_adds_nothing PASSED [ 28%]
+tests/test_registration.py::test_batch_with_one_approved_request PASSED  [ 42%]
+tests/test_registration.py::test_batch_with_two_approved_requests_sums_fees PASSED [ 57%]
+tests/test_registration.py::test_batch_with_approved_and_rejected_requests PASSED [ 71%]
+tests/test_registration.py::test_enroll_student_allowed_sends_confirmation PASSED [ 85%]
+tests/test_registration.py::test_enroll_student_rejected_sends_rejection PASSED [100%]
+
+============================== 7 passed in 0.01s ===============================
